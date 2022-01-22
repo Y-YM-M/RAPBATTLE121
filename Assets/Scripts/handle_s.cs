@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class handle_s : MonoBehaviour
 {   
-   
+   float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +15,8 @@ public class handle_s : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        gameObject.transform.position += new Vector3(-1, 0, 1);
+    {   
+        timer+=Time.deltaTime;
+        gameObject.transform.position += new Vector3(-timer, 0, 1);
     }
 }
