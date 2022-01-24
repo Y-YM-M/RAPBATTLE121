@@ -19,7 +19,6 @@ public class RapJudger : MonoBehaviour
     }
     void Update()
     {
-
     }
     void JudgeRap(List<string> ls00)
     {
